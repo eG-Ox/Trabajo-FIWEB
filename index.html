@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodologías BEM y camelCase</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+   
+<body>
+     <header class="header">
+        <h1 class="header_titulo">Metodologías BEM y camelCase</h1>
+        <p class="header_subtitulo">Página informativa sobre buenas prácticas en el nombramiento de clases CSS y variables.</p>
+    </header>
+    <main class="main">
+        <section class="bem">
+            <h2 class="bem_titulo">¿Qué es BEM?</h2>
+            <p class="bem_parrafo">BEM, que significa "Block, Element, Modifier", es una metodología de desarrollo para CSS que ayuda a organizar y reutilizar estilos de manera más eficiente. Permite crear bloques de estilos (bloques), elementos dentro de esos bloques (elementos),
+                 y modificadores que cambian el estilo de los elementos. Esta metodología facilita la creación de componentes reutilizables y escalables. </p>
+
+            <h3 class="bem_subtitulo">Ventajas de usar BEM:</h3>
+            <ol class="bem_lista">
+                <li>Claridad al estructurar el código</li>
+                <li>Mejor mantenimiento</li>
+                <li>Facilita la reutilización</li>
+                <li>Evita conflictos de nombres</li>
+            </ol>
+
+            <section>
+            <h3 class="bem_ejemplos">Ejemplos de código BEM</h3>
+            <ul class="bem_lista">
+                <!-- Ejemplo 1: Bloque + Elemento + Modificador -->
+                <li>
+                <strong>.button</strong> (Bloque)<br>
+                <code>&lt;button class="button"&gt;Enviar&lt;/button&gt;</code>
+                </li>
+                <li>
+                <strong>.button__icono</strong> (Elemento)<br>
+                <code>&lt;button class="button"&gt;&lt;span class="button__icono"&gt;📩&lt;/span&gt;Enviar&lt;/button&gt;</code>
+                </li>
+                <li>
+                <strong>.button--activo</strong> (Modificador)<br>
+                <code>&lt;button class="button button--activo"&gt;Guardado&lt;/button&gt;</code>
+                </li>
+            </ul>
+            </section>
+
+        <section>
+            <h3 class="camel_subtitulo">¿Dónde se usa camelCase?</h3>
+            <ol class="camel_lista">
+                <!-- Ejemplo 1: Variables en JavaScript -->
+                <li>
+                <strong>Variables en JavaScript</strong><br>
+                <code>let miVariable = 10;</code><br>
+                <small>Ejemplo: <code>table</code> (no usa camelCase, pero <code>tablaDeDatos</code> sí lo aplicaría).</small>
+                </li>
+                <!-- Ejemplo 2: Funciones -->
+                <li>
+                <strong>Funciones/métodos</strong><br>
+                <code>function obtenerDatos() { ... }</code><br>
+                <small>Ejemplo: <code>calcularTotal()</code>, <code>convertirAJSON()</code>.</small>
+                </li>
+                <!-- Ejemplo 3: Propiedades de objetos -->
+                <li>
+                <strong>Propiedades de objetos</strong><br>
+                <code>const usuario = { nombreCompleto: "Ana López" };</code><br>
+                <small>Ejemplo: <code>precioConIva</code>, <code>esUsuarioPremium</code>.</small>
+                </li>
+            </ol>
+        </section>
+
+        <section class="comparacion">
+            <h2 class="comparacion_titulo">Comparación entre BEM y camelCase</h2>
+            <table class="comparacion_tabla" border="1">
+                    <thead>
+                        <tr>
+                            <th>Característica</th>
+                            <th>BEM</th>
+                            <th>camelCase</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Uso principal</td>
+                            <td>CSS (estructuración de clases)</td>
+                            <td>Programación (variables y funciones)</td>
+                        </tr>
+                        <tr>
+                            <td>Separación</td>
+                            <td>Guiones bajos dobles (`__`) y dobles guiones (`--`)</td>
+                            <td>Mayúsculas internas</td>
+                        </tr>
+                        <tr>
+                            <td>Ejemplo</td>
+                            <td>.bloque__elemento--modificador</td>
+                            <td>miVariableEjemplo</td>
+                        </tr>
+                        <tr>
+                            <td>Legibilidad</td>
+                            <td>Alta en estructuras CSS complejas</td>
+                            <td>Alta en lógica de programación</td>
+                        </tr>
+                        <tr>
+                            <td>Ventaja</td>
+                            <td>Organización clara y mantenimiento sencillo en CSS</td>
+                            <td>Brevedad y coherencia en la mayoría de lenguajes</td>
+                        </tr>
+                        <tr>
+                            <td>Ámbito</td>
+                            <td>HTML/CSS</td>
+                            <td>JavaScript, Java, C#, entre otros</td>
+                        </tr>
+                        <tr>
+                            <td>Convención</td>
+                            <td>.bloque__elemento--modificador</td>
+                            <td>nombreDeVariable o nombreDeFuncion()</td>
+                        </tr>
+                        <tr>
+                            <td>Popularidad</td>
+                            <td>Muy usado en desarrollo frontend moderno</td>
+                            <td>Estándar en múltiples lenguajes de programación</td>
+                        </tr>
+                    </tbody>
+                </table>
+            <p class="comparacion_texto">Usa BEM cuando trabajes con clases CSS. Usa camelCase cuando declares variables o funciones en lenguajes de programación.</p>
+        </section>
+    </main>
+</body>
+</html>

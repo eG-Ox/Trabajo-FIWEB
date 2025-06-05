@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif; /*cambia la letra*/
+    line-height: 1.6;
+    margin: auto;
+    padding: 20px 30px;
+    background-color: #f9f9f9;
+    color: black;
+    max-width: 900px;/*maximo ancho*/
+}
+.header{
+    background-color: royalblue;
+    width: 900px auto;
+    text-align: center;
+    justify-content: center;
+    padding: 20px 30px;
+    max-width: 900px;
+    color: white;
+}
+
+.main{
+    width: 900px;
+    text-align: left;
+    background-color: white;
+}
+
+.footer{
+    text-align: center;
+}
+.comparacion_tabla{
+    width: 100%;
+}
+.comparacion_tabla th{
+    background-color: royalblue;
+    color: white;
+    text-align: center;
+}
