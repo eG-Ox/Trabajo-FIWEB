@@ -1,39 +1,82 @@
+/* ====== ESTILO GENERAL DEL CUERPO DE LA PÁGINA ====== */
 body {
-    font-family: Arial, sans-serif; /*cambia la letra*/
-    line-height: 1.6;
-    margin: auto;
-    padding: 20px 30px;
-    background-color: #000000;
-    color: black;
-    max-width: 900px;/*maximo ancho*/
-}
-.header{
-    background-color: royalblue;
-    width: 900px auto;
-    text-align: center;
-    justify-content: center;
-    padding: 20px 30px;
-    max-width: 900px;
-    color: white;
+    font-family: Arial, sans-serif;         /* Define el tipo de letra */
+    line-height: 1.6;                       /* Altura de línea */
+    margin: auto;                           /* Centra el contenido horizontalmente */
+    padding: 20px 30px;                     /* Espacio interior (superior/inferior 20px, laterales 30px) */
+    color: black;                           /* Color de texto predeterminado */
+    max-width: 1200px;                       /* Ancho máximo del contenido (centrado) */
+    background-image: url('../Imagenes/BACKGROUND\ FONDO.jpg');
+    background-size: cover;
 }
 
-.main{
-    width: 900px;
-    text-align: left;
-    background-color: white;
+/* ====== ENCABEZADO ====== */
+.header {
+  background-image: url('../Imagenes/12893175_5072612.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 40px 20px;
+  max-width: 1200px;
 }
 
-.footer{
-    text-align: center;
+.header_contenido {
+  display: flex;
+  align-items: center;
 }
-.comparacion_tabla{
-    width: 100%;
+
+.header_logo {
+  width: 150PX;
+  height: auto;
 }
-.comparacion_tabla th{
-    background-color: royalblue;
-    color: white;
-    text-align: center;
+
+.header_textos {
+  text-align: center;
+  margin: auto;
+  color: white;
 }
-.bem_parrafo{
-    text-align: justify;
+
+/* ====== SECCIÓN PRINCIPAL ====== */
+.main {
+    background-color: white;              /* Fondo blanco para contraste con el body negro */
+    padding: 20px;                        /* Espaciado interno */
+    max-width: 1200px;                     /* Mismo ancho que el body y header */
+    margin: auto;                         /* Centrado horizontal */
+    text-align: left;                     /* Alineación izquierda por defecto */
 }
+
+/* ====== PIE DE PÁGINA ====== */
+.footer {
+    background-color: #f1f1f1;            /* Fondo gris claro para el pie */
+    text-align: center;                   /* Centra el texto */
+    padding: 20px 30px;                   /* Espaciado interno */
+    max-width: 1200px;                     /* Mismo ancho que el resto de la página */
+    margin: 2rem auto 0 auto;             /* Espacio superior y centrado horizontal */
+    font-size: 0.9rem;                    /* Tamaño de fuente más pequeño */
+    color: #333;                          /* Color de texto gris oscuro */
+}
+
+/* ====== TABLA DE COMPARACIÓN ENTRE BEM Y CAMELCASE ====== */
+.comparacion_tabla {
+    width: 100%;                          /* La tabla ocupa todo el ancho del contenedor */
+    border-collapse: collapse;            /* Quita el espacio entre bordes de celdas */
+}
+
+.comparacion_tabla th {
+    background-color: royalblue;          /* Fondo azul para los encabezados de tabla */
+    color: white;                         /* Texto blanco */
+    text-align: center;                   /* Centrado horizontal del texto */
+    padding: 10px;                        /* Espaciado interno de celdas */
+}
+
+.comparacion_tabla td {
+    padding: 10px;                        /* Espaciado interno en celdas normales */
+    border: 1px solid #ccc;               /* Borde gris claro para separar las celdas */
+}
+
+/* ====== PÁRRAFO JUSTIFICADO EN SECCIÓN BEM ====== */
+.bem_parrafo {
+    text-align: justify;                  /* Justifica el texto para que los márgenes sean rectos */
+}
+
+
+
