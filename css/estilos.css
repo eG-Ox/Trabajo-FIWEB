@@ -43,6 +43,21 @@ body {
     margin: auto;                         /* Centrado horizontal */
     text-align: left;                     /* Alineación izquierda por defecto */
 }
+/* ====== EJEMPLOS ====== */
+
+.ejemplo {
+  padding: 20px;
+  margin: 20px 0; /* elimina auto */
+  max-width: 400px;
+  border-radius: 15px;  
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #f4f4f4;
+  text-align: left;
+  font-family: Arial, sans-serif;
+}
+
+
+
 
 /* ====== PIE DE PÁGINA ====== */
 .footer {
@@ -62,8 +77,8 @@ body {
 }
 
 .comparacion_tabla th {
-    background-color: royalblue;          /* Fondo azul para los encabezados de tabla */
-    color: white;                         /* Texto blanco */
+    background-color: rgb(23, 41, 95);          /* Fondo azul para los encabezados de tabla */
+    color: white;                         /* Texto  blanco */
     text-align: center;                   /* Centrado horizontal del texto */
     padding: 10px;                        /* Espaciado interno de celdas */
 }
@@ -78,5 +93,27 @@ body {
     text-align: justify;                  /* Justifica el texto para que los márgenes sean rectos */
 }
 
+.radio {
+  background-image: url('../Imagenes/radio.jpg');
+  background-size: cover;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.radio__titulo {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.radio__player {
+  width: 100%;
+  border-radius: 8px;
+}
 
 

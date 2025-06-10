@@ -37,21 +37,21 @@
             <section>
             <h3 class="bem_ejemplos">Ejemplos de código BEM</h3>
             <ul class="bem_lista">
-                <!-- Ejemplo 1: Bloque + Elemento + Modificador -->
-                <li>
+                <li class="ejemplo">
                 <strong>.button</strong> (Bloque)<br>
                 <code>&lt;button class="button"&gt;Enviar&lt;/button&gt;</code>
                 </li>
-                <li>
+                <li class="ejemplo">
                 <strong>.button__icono</strong> (Elemento)<br>
                 <code>&lt;button class="button"&gt;&lt;span class="button__icono"&gt;📩&lt;/span&gt;Enviar&lt;/button&gt;</code>
                 </li>
-                <li>
+                <li class="ejemplo">
                 <strong>.button--activo</strong> (Modificador)<br>
                 <code>&lt;button class="button button--activo"&gt;Guardado&lt;/button&gt;</code>
                 </li>
             </ul>
             </section>
+
 
         <section class="Camel">
             <h3 class="camel_subtitulo">¿Dónde se usa camelCase?</h3>
@@ -132,13 +132,16 @@
                 </table>
             <p class="comparacion_texto">Usa BEM cuando trabajes con clases CSS. Usa camelCase cuando declares variables o funciones en lenguajes de programación.</p>
         </section>
-        <section class="Radio">
-            <h2>🎵 Escucha Radio Planeta 107.7 FM</h2>
-            <audio controls autoplay>
-                <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/CRP_PLAAAC.aac?csegid=1010&dist=1010" type="audio/aac">
-                Tu navegador no soporta el reproductor de audio.
-            </audio>
+        <section class="radio">
+        <h2 class="radio__titulo">
+            🎵 Escucha Radio Planeta 107.7 FM
+        </h2>
+        <audio controls autoplay class="radio__player">
+            <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/CRP_PLAAAC.aac?csegid=1010&dist=1010" type="audio/aac">
+            Tu navegador no soporta el reproductor de audio.
+        </audio>
         </section>
+
         
 
 
